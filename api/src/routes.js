@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { Compression, CompressionTypes } from "kafkajs";
 
 const routes = Router();
 
@@ -12,6 +13,7 @@ routes.post("/certifications", async (req, res) => {
   // Chamar microsserviço
   await producer.send({
     topic: "issue-certificate",
+    compression: CompressionTypes.GZIP,
     messages: [{ value: JSON.stringify(message) }]
   });
 

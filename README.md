@@ -23,3 +23,9 @@ Se conseguir sincrona/assincrona:
 - Redis / RabbitMQ / **Kafka**;
 
 - Nubank, Uber, Paypal, Netflix;
+
+## O que podemos estudar
+
+- Consumer demorando para subir;
+- Frameworks específicos para microservices (Molecular/Nest)
+- _expectResponse_ (Algo assim).
